@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html, body, #root, .App{
+    height: 100%;
+}
+
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    background-size: cover;
+}
+
+.center-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32%;
+    height: 37%;
+    text-align: justify;
+    padding: 2rem 2.5rem;
+    background: rgba( 255, 255, 255, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.0px );
+    -webkit-backdrop-filter: blur( 12.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.content{
+    height: 60%;
+}
+
+.quote{
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.author{
+    text-align: right;
+    margin: 1.3rem 0;
+    font-size: 1rem;
+}
+
+button{
+    
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    background: rgba( 255, 255, 255, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.0px );
+    -webkit-backdrop-filter: blur( 12.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.4s all;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width:1200px)
+{
+    .center-div{
+        width: 42%;
+        height: 46%;
+    }
+}
+
+@media only screen and (max-width:900px)
+{
+    .center-div{
+        width: 52%;
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media only screen and (max-width:600px)
+{
+    body,html{
+        font-size: 14px;
+    }
+    .center-div{
+        width: 65%;
+        height: 42%;
+    }
+}
+@media only screen and (max-width:420px)
+{
+    body,html{
+        font-size: 13px;
+    }
+    .center-div{
+        width: 85%;
+        height: 40%;
+    }
+}
